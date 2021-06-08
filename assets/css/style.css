@@ -1,0 +1,58 @@
+/* Global Styles */
+:root {
+    --primary-color: #114a68;
+    --secondary-color: #8bbbbd;
+    --tertiary-color: #293233;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--primary-color);
+    font-family: helvetica, Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+header h1 {
+
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 0 5px white;
+    padding: 10px 10px 10px 70px;
+    background-image: linear-gradient(to right, var(--tertiary-color),var(--secondary-color));
+    
+}
+header h1 a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+} 
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px 0 0;
+    list-style: none;
+}
+header nav ul li {
+    padding: 2px 15px;
+    border-right: 0.7px solid var(--secondary-color);
+}
+header nav ul li:last-child {
+    border-right: none;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 24px;
+}
