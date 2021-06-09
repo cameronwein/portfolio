@@ -3,6 +3,7 @@
     --primary-color: #114a68;
     --secondary-color: #8bbbbd;
     --tertiary-color: #293233;
+    --background-color: #eff2fc;
 }
 * {
     margin: 0;
@@ -12,6 +13,7 @@
 body {
     color: var(--primary-color);
     font-family: helvetica, Arial, sans-serif;
+    background: var(--background-color);
 }
 
 /* Header */
@@ -30,7 +32,7 @@ header h1 {
     text-shadow: 0 0 5px white;
     padding: 10px 10px 10px 70px;
     background-image: linear-gradient(to right, var(--tertiary-color),var(--secondary-color));
-    
+
 }
 header h1 a {
     text-decoration: none;
@@ -55,4 +57,62 @@ header nav ul li a {
     text-decoration: none;
     color: var(--secondary-color);
     font-size: 24px;
+}
+.hero {
+    background-image: url("../images/River.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 600px;
+    background-position: 50% 30%;
+    margin-bottom: 50px;
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;
+}
+.section-title {
+    font-size: 60px;
+    color: var(--primary-color);
+    padding: 5px 8px;
+    border-right: 5px solid var(--primary-color);
+    text-align: right;
+    flex: 1 20%;
+    margin-right: 30px;
+
+}
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto 50px auto;
+}
+.about-me-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 70%;
+}
+.about-me-img {
+    flex: 0 25%;
+}
+.about-me-img img {
+    max-width: 100%;
+    padding: 0 20px;
+}
+.about-me-text {
+    flex: 1;
+    width: 80%;
+    line-height: 1.5;
+    padding: 20px;
+}
+.about-me-text p {
+    padding: 5px 0;
 }
